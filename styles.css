@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 2em 4em;
+  }
+
+  /* Seccion Encriptar/Desencriptar */
+  
+  .main {
+    height: max-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .main_screen {
+    width: 100%;
+  }
+  
+  .main_content {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ #text_input {
+    width: 450px;
+    padding: 5px;
+    margin: 15px 100px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    border: none;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  ::placeholder {
+    color: #0A3871;
+  }
+
+  .main_content p {
+    background-color: #E5E5E5;
+    margin: 5em 1em .8em;
+    color: #495057;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  button {
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    width: 280px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .button1 {
+    padding: 24px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+  }
+
+  .button2 {
+    padding: 24px;
+    background: #D8DFE8;
+    border-radius: 24px;
+    color: #0A3871;
+    
+  }
+
+  .footer {
+    margin-top: 4em;
+    text-align: center;
+  }
+
+  .contact {
+    font-size: 25px;
+    color: #0A3871;
+  }
+
+  /* Seccion tarjeta mensaje */
+  
+  .card {
+    width: 350px;
+    height: 83vh;
+    padding: 20px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_img {
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .card h1 {
+    background-color: #FFFFFF;
+    color: #343A40;
+  }
+
+  .main_text {
+    background-color: #FFFFFF;
+    color: #495057;
+  }
+
+  /* Salida de texto */
+
+  #text_output {
+    display: none;
+    width: 317px;
+    height: 520px;
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    right: 98px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    border: none;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    background-color: #FFFFFF;
+  }
+
+  .btn_copiar {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    bottom: 95px;
+    right: 115px;
+    padding: 24px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+  }
+
+  /* Media Query */
+
+  @media (max-width: 768px) {
+    body {
+      margin: 2em;
+    }
+
+    .main {
+      flex-direction: column;
+    }
+
+    .main_content {
+      margin-top: 1em;
+    }
+
+    #text_input {
+      height: 400px;
+    }
+
+    .main_content p {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    .container {
+      margin-top: 1.5em;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 550px;
+      height: 270px;
+      padding: 20px;
+    }
+
+    .main_img {
+      width: 200px;
+      margin: 0 auto 1em;
+    }
+
+    .main_title {
+      margin: 0;
+      padding: 0;
+    }
+
+    #text_output {
+      width: 510px;
+      height: 150px;
+      top: 720px;
+      left: 110px;
+      padding: 20px;
+    }
+
+    .btn_copiar {
+      width: 510px;
+      bottom: 180px;
+      left: 132px;
+    }
+
+    .footer {
+      margin-top: 3em;
+    }
+  }
+
+  @media (max-width: 375px){
+    .logo {
+      width: 100px;
+    }
+
+    #text_input {
+      width: 300px;
+      height: 310px;
+      font-size: 25px;
+    }
+
+    .main_content p {
+      text-align: center;
+    }
+
+    .buttons {
+      flex-direction: column;
+    }
+
+    .button1, .button2 {
+      width: 300px;
+    }
+
+    .container {
+      margin-top: 1em;
+    }
+
+    .card {
+      height: 500px;
+    }
+
+    .main_text {
+      padding: 0;
+      padding-top: 10px;
+      margin: 0;
+    }
+
+    #text_output {
+      width: 250px;
+      height: 370px;
+      top: 720px;
+      left: 45px;
+      padding: 20px;
+      margin-bottom: 10em;
+    }
+
+    .btn_copiar {
+      width: 270px;
+      bottom: -285px;
+      left: 53px;
+    }
+
+    .footer {
+      margin-top: 2em;
+    }
+
+  }
