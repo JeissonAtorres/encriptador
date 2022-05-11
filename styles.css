@@ -12,6 +12,7 @@ body {
   /* Seccion Encriptar/Desencriptar */
   
   .main {
+    max-width: 1440px;
     height: max-content;
     display: flex;
     gap: 20px;
@@ -20,7 +21,7 @@ body {
   }
   
   .main_screen {
-    width: 100%;
+    width: 900px;
   }
   
   .main_content {
@@ -33,6 +34,7 @@ body {
 
  #text_input {
     width: 450px;
+    height: 400px;
     padding: 5px;
     margin: 15px 100px;
     font-style: normal;
@@ -52,7 +54,7 @@ body {
 
   .main_content p {
     background-color: #E5E5E5;
-    margin: 5em 1em .8em;
+    margin: 3em 1em 1em;
     color: #495057;
   }
 
@@ -89,7 +91,7 @@ body {
   }
 
   .footer {
-    margin-top: 4em;
+    margin-top: 3.5em;
     text-align: center;
   }
 
@@ -102,7 +104,8 @@ body {
   
   .card {
     width: 350px;
-    height: 83vh;
+    height: 82vh;
+    margin-top: 1em;
     padding: 20px;
     text-align: center;
     background: #FFFFFF;
@@ -136,7 +139,7 @@ body {
     height: 520px;
     position: absolute;
     z-index: 2;
-    top: 60px;
+    top: 75px;
     right: 98px;
     font-style: normal;
     font-weight: 400;
@@ -166,121 +169,166 @@ body {
 
   @media (max-width: 768px) {
     body {
-      margin: 2em;
+      margin: 3em;
     }
 
+    .logo {
+      width: 150px;
+    }
+    
     .main {
       flex-direction: column;
     }
 
     .main_content {
-      margin-top: 1em;
+      margin: 1em;
+    }
+
+    .main_screen {
+      width: 600px;
+      margin: 0 auto;
     }
 
     #text_input {
+      width: 600px;
       height: 400px;
+      font-size: 45px;
     }
 
     .main_content p {
-      margin-top: 2em;
+      margin-top: 1em;
       margin-bottom: 1em;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .button1, .button2 {
+      width: 330px;
+      padding: 50px;
+      font-size: 32px;
     }
 
     .container {
-      margin-top: 1.5em;
+      margin-top: 1em;
       display: flex;
       justify-content: center;
     }
 
     .card {
-      width: 550px;
-      height: 270px;
+      width: 780px;
+      height: 390px;
       padding: 20px;
     }
 
     .main_img {
-      width: 200px;
-      margin: 0 auto 1em;
+      display: none;
     }
 
     .main_title {
-      margin: 0;
+      margin-top: .3em;
       padding: 0;
-    }
-
-    #text_output {
-      width: 510px;
-      height: 150px;
-      top: 720px;
-      left: 110px;
-      padding: 20px;
-    }
-
-    .btn_copiar {
-      width: 510px;
-      bottom: 180px;
-      left: 132px;
-    }
-
-    .footer {
-      margin-top: 3em;
-    }
-  }
-
-  @media (max-width: 375px){
-    .logo {
-      width: 100px;
-    }
-
-    #text_input {
-      width: 300px;
-      height: 310px;
-      font-size: 25px;
-    }
-
-    .main_content p {
-      text-align: center;
-    }
-
-    .buttons {
-      flex-direction: column;
-    }
-
-    .button1, .button2 {
-      width: 300px;
-    }
-
-    .container {
-      margin-top: 1em;
-    }
-
-    .card {
-      height: 500px;
+      font-size: 35px;
     }
 
     .main_text {
-      padding: 0;
-      padding-top: 10px;
       margin: 0;
+      padding: 0;
+      font-size: 32px;
     }
 
     #text_output {
-      width: 250px;
-      height: 370px;
-      top: 720px;
-      left: 45px;
+      width: 550px;
+      height: 215px;
+      top: 900px;
+      left: 90px;
       padding: 20px;
-      margin-bottom: 10em;
+      font-size: 32px;
     }
 
     .btn_copiar {
-      width: 270px;
-      bottom: -285px;
-      left: 53px;
+      width: 595px;
+      bottom: 110px;
+      left: 89px;
+      padding: 40px;
+      font-size: 30px;
+    }
+
+    .contact {
+      font-size: 40px;
     }
 
     .footer {
       margin-top: 2em;
+      font-size: 32px;
+    }
+  }
+
+  @media (max-width: 375px){
+    body {
+      margin: 2em 1em;
     }
 
+    .logo {
+      width: 100px;
+    }
+
+    .main_screen {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    #text_input {
+      width: 300px;
+      height: 480px;
+      font-size: 32px;
+    }
+
+    .main_content p {
+      margin: 1em 0;
+      font-size: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .button1, .button2 {
+      font-size: 20px;
+      padding: 35px;
+    }
+
+    .container {
+      margin-top: .2em;
+    }
+
+    .main_title, .main_text {
+      font-size: 24px;
+    }
+
+    #text_output {
+      width: 280px;
+      height: 265px;
+      top: 950px;
+      left: 30px;
+      padding: 20px;
+      font-size: 24px;
+    }
+    
+    .btn_copiar {
+      width: 290px;
+      bottom: -415px;
+      left: 45px;
+      padding: 30px;
+      font-size: 20px;
+    }
+
+    .contact {
+      font-size: 30px;
+    }
+
+    .footer {
+      margin-top: 1.5em;
+      font-size: 20px;
+    }
   }
