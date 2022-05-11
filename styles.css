@@ -191,7 +191,7 @@ body {
 
     #text_input {
       width: 600px;
-      height: 400px;
+      height: 465px;
       font-size: 45px;
     }
 
@@ -280,12 +280,12 @@ body {
     #text_input {
       width: 300px;
       height: 260px;
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .main_content p {
       margin: 1em 0;
-      font-size: 20px;
+      font-size: 14px;
     }
 
     .buttons {
@@ -295,7 +295,7 @@ body {
 
     .button1, .button2 {
       font-size: 20px;
-      padding: 35px;
+      padding: 25px;
     }
 
     .container {
