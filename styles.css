@@ -295,7 +295,7 @@ body {
 
     .button1, .button2 {
       font-size: 20px;
-      padding: 25px;
+      padding: 30px;
     }
 
     .container {
@@ -307,17 +307,19 @@ body {
     }
 
     #text_output {
+      position: absolute;
       width: 280px;
       height: 265px;
-      top: 950px;
+      top: 670px;
       left: 30px;
       padding: 20px;
       font-size: 24px;
     }
     
     .btn_copiar {
+      position: absolute;
       width: 290px;
-      bottom: -415px;
+      bottom: -360px;
       left: 45px;
       padding: 30px;
       font-size: 20px;
