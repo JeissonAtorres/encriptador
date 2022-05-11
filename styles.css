@@ -307,12 +307,13 @@ body {
     }
 
     #text_output {
-      position: absolute;
+      position: static;
       width: 280px;
       height: 265px;
-      top: 670px;
+      top: 600px;
       left: 30px;
       padding: 20px;
+      padding-bottom: 5.5em;
       font-size: 24px;
     }
     
